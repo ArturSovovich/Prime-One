@@ -46,6 +46,14 @@ main {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #fff;
+  transition: background 0.5s ease 0s, border-radius 0.5s ease 0s;
+}
+.btn:hover {
+  background: #E45341;
+  border-radius: 20%; 
+}
+.btn:active {
+  transform: translate(2px,2px);
 }
 .btn_w {
   background: #fff;
@@ -527,6 +535,11 @@ main {
 .contacts-social {
   display: flex;
 }
+.contacts-social a:hover{
+  display: inline-block;
+  transform: scale(1.2,1.2);
+  transition: all 1s ease 0;
+}
 .contacts-social_item:not(:last-child) {
   margin: 0 30px 0 0;
 }
@@ -631,6 +644,9 @@ textarea.input {
   .product_column {
     flex: 0 0 50%;
   }
+  .product-item_img {
+    border: solid 1px #000;
+  }
   /* -----choose---- */
   .choose-top_text {
     font-size: 35px;
@@ -722,6 +738,9 @@ textarea.input {
   /* ----product---- */
   .product_column {
     flex: 0 0 100%;
+  }
+  .product-item_img {
+    border: none;
   }
   .product-item_title {
     display: block;
