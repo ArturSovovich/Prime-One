@@ -40,7 +40,6 @@ img{
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
-/* Заготовка для input + избавляет от глюков на разных браузерах(устройств) */
 input[type=text],input[type=email],input[type=tel],textarea {
 	appearance: none;
 	-moz-appearance: none;
@@ -52,9 +51,7 @@ input[type=text],input[type=email],input[type=tel],textarea {
 	display: block;
 	padding: 0 10px;
 }
-/* +делает запрет на увеличение окна textarea */
 textarea.input {
 	resize: none;
 	padding: 10 10;
 }
-/* =============== */
